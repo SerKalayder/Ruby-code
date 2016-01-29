@@ -1,0 +1,7 @@
+username: username
+password: password
+db_name: seo_db
+
+#storage: file
+#storage: db_sql
+#storage: db_orm

@@ -1,0 +1,6 @@
+td, th {
+  width: 150px;
+  padding: auto 50px;
+  .background: red;
+  border-top:1px solid #ccc;
+}

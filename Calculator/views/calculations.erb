@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Calculations</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <section>
+      <div>Calculations</div>
+      </br>
+      <table>
+        <tr>
+          <th>Month #</th>
+          <th>Payment</th>
+          <th>Paid interest</th>
+          <th>Common payment</th>
+          <th>Loan remainder</th>
+        </tr>
+        <!-- inline code -->
+        <% @table.rows.each do |row| %>
+          <tr>
+            <td><%= row.month  %></td>
+            <td><%= row.payment %></td>
+            <td><%= row.percentage %></td>
+            <td><%= row.common_payment %></td>
+            <td><%= row.remainder %></td>
+          </tr>
+        <% end %>
+        <tr>
+          <td></td>
+          <td><%= @table.body %></td>
+          <td><%= @table.delta %></td>
+          <td><%= @table.total %></td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

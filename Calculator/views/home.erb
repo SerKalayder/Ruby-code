@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+</head>
+  <body>
+    <section>
+      <div>Loan Calculator</div>
+      </br>
+      <form id="calcForm" action="/calc" method="post">
+        Interest Rate <input name="rate" type="text" /> </br></br>
+        Loan amount <input name="amount" type="text" /> </br></br>
+        Time <input name="time" type="text" /> </br></br>
+        Method
+        <input type="radio" name="method" value="standart">Standart
+        <input type="radio" name="method" value="annuity">Annuity
+        </br></br>
+        <button type="submit" form="calcForm">Make calculations</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+title = @report.title
+
+div.container
+  /div.row
+  h1 Report for: #{ @report.title }
+  h2 = @report.url  
+  h3 = @report.date 
+  h4 IP: #{ @report.ip }
+    
+  h1 Headers
+  table.table
+    thead
+      th Key
+      th Value
+    - @report.headers.each do |k, v|
+      tr
+        td = k
+        td = v
+
+  h1 Links
+  table.table
+    thead
+      th #
+      th Title
+      th href
+      th rel
+      th target
+      th download
+    - @report.links.each do |link|
+      tr
+        td = link.number
+        td = link.title
+        td = link.href
+        td = link.rel
+        td = link.target
+        td = link.download
+    
